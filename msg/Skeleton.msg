@@ -1,4 +1,4 @@
-#Header header # I CANT GET THIS TO COMPILE!
+#Header header
 
 int32 body_id
 int32 tracking_status
@@ -8,22 +8,65 @@ geometry_msgs/Point32 position2D # x,y in camera frame, z distance from camera
 
 geometry_msgs/Point32 centerOfMass
 
-#Position of interesting joints
-geometry_msgs/Point32 joint_position_head
-geometry_msgs/Point32 joint_position_neck
-geometry_msgs/Point32 joint_position_shoulder
-geometry_msgs/Point32 joint_position_spine_top
-geometry_msgs/Point32 joint_position_spine_mid
-geometry_msgs/Point32 joint_position_spine_bottom
+#Position of upper body real joints
+geometry_msgs/Point32 joint_position_head_real
+geometry_msgs/Point32 joint_position_neck_real
+geometry_msgs/Point32 joint_position_left_collar_real
 
-geometry_msgs/Point32 joint_position_left_shoulder
-geometry_msgs/Point32 joint_position_left_elbow
-geometry_msgs/Point32 joint_position_left_hand
+geometry_msgs/Point32 joint_position_torso_real
+geometry_msgs/Point32 joint_position_waist_real
 
-geometry_msgs/Point32 joint_position_right_shoulder
-geometry_msgs/Point32 joint_position_right_elbow
-geometry_msgs/Point32 joint_position_right_hand
+geometry_msgs/Point32 joint_position_left_shoulder_real
+geometry_msgs/Point32 joint_position_left_elbow_real
+geometry_msgs/Point32 joint_position_left_wrist_real
+geometry_msgs/Point32 joint_position_left_hand_real
 
-# Robot is usually too close to see legs, and not very interesting
+geometry_msgs/Point32 joint_position_right_shoulder_real
+geometry_msgs/Point32 joint_position_right_elbow_real
+geometry_msgs/Point32 joint_position_right_wrist_real
+geometry_msgs/Point32 joint_position_right_hand_real
 
+#Position of upper body projected joints
+geometry_msgs/Point32 joint_position_head_proj
+geometry_msgs/Point32 joint_position_neck_proj
+geometry_msgs/Point32 joint_position_left_collar_proj
 
+geometry_msgs/Point32 joint_position_torso_proj
+geometry_msgs/Point32 joint_position_waist_proj
+
+geometry_msgs/Point32 joint_position_left_shoulder_proj
+geometry_msgs/Point32 joint_position_left_elbow_proj
+geometry_msgs/Point32 joint_position_left_wrist_proj
+geometry_msgs/Point32 joint_position_left_hand_proj
+
+geometry_msgs/Point32 joint_position_right_shoulder_proj
+geometry_msgs/Point32 joint_position_right_elbow_proj
+geometry_msgs/Point32 joint_position_right_wrist_proj
+geometry_msgs/Point32 joint_position_right_hand_proj
+
+#Orientation matrix of needed joints:
+geometry_msgs/Point32 joint_orientation1_head
+geometry_msgs/Point32 joint_orientation2_head
+geometry_msgs/Point32 joint_orientation3_head
+
+geometry_msgs/Point32 joint_orientation1_neck
+geometry_msgs/Point32 joint_orientation2_neck
+geometry_msgs/Point32 joint_orientation3_neck
+
+geometry_msgs/Point32 joint_orientation1_waist
+geometry_msgs/Point32 joint_orientation2_waist
+geometry_msgs/Point32 joint_orientation3_waist
+
+geometry_msgs/Point32 joint_orientation1_left_shoulder
+geometry_msgs/Point32 joint_orientation2_left_shoulder
+geometry_msgs/Point32 joint_orientation3_left_shoulder
+geometry_msgs/Point32 joint_orientation1_left_elbow
+geometry_msgs/Point32 joint_orientation2_left_elbow
+geometry_msgs/Point32 joint_orientation3_left_elbow
+
+geometry_msgs/Point32 joint_orientation1_right_shoulder
+geometry_msgs/Point32 joint_orientation2_right_shoulder
+geometry_msgs/Point32 joint_orientation3_right_shoulder
+geometry_msgs/Point32 joint_orientation1_right_elbow
+geometry_msgs/Point32 joint_orientation2_right_elbow
+geometry_msgs/Point32 joint_orientation3_right_elbow
